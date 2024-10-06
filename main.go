@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-//go:generate bin/tools/include macros/log.h
+//go:generate bin/tools/include macros/logging.h
 
 var LoggingEnabled = true
 
