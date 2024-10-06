@@ -6,6 +6,7 @@ import (
 	"os"
 	"os/exec"
 	"path"
+	"path/filepath"
 	"strings"
 )
 
@@ -22,7 +23,10 @@ func main() {
 			log.Fatalf("get work dir: %v", err)
 		}
 
-		headersDir = workDir
+		headersDir, err = filepath.Abs(workDir)
+		if err != nil {
+			log.Fatalf("get abs work dir: %v", err)
+		}
 	}
 
 	genDir := os.Getenv("GO_INCLUDE_GEN_DIR")
