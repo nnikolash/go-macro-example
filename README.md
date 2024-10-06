@@ -1,6 +1,6 @@
 # Golang Macro Example
 
-Golang does not have built-in macro feature. The closes things it has are **build tags** and **code generators**. But this feature is by nature is standalone - often it operates text rather than specific language, so one may add macroses into Go manually.
+Golang does not have built-in macro feature. The closes features it has are **build tags** and **code generators**. But marcos feature is by nature is standalone - in most cases it operates not some specific language, but just text. So it may work to just manually add macroses into Go.
 
 This project demonstrates possible implementation and usage of macroses in Go based on **C++** **preprocessor**.
 
